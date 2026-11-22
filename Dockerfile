@@ -1,4 +1,6 @@
 FROM scratch
 COPY app /app
+ENV PROBE_STAGE=all
+ENV PROBE_STAGE_X=1
 USER 1000:1000
 CMD ["/app"]
