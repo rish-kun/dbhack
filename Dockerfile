@@ -1,6 +1,5 @@
 FROM scratch
 COPY app /app
-ENV PROBE_REREAD=1
-ENV PROBE_PAR=1
+ENV THP=0
 USER 1000:1000
 CMD ["/app"]
